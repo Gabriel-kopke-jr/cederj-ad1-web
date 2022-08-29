@@ -1,0 +1,56 @@
+body{
+
+    background-color: #6480FF;
+}
+
+
+.contato {
+    text-align: right;
+    font-size: 22;
+    font-family: Verdana;
+    color: #FFFF00;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    margin-bottom: 1%;
+    
+}
+
+.tabela-botoes {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px;
+    width:90%;
+}
+
+
+th{
+    width: 110px;
+    background-color:#3040BB;
+    font-size: 20;
+    padding-left: 1px;
+       
+}
+
+.botao-navegacao{
+    color: #FFFF00;
+}
+
+.botao-navegacao :visited{
+    color: #EEEE00;
+}
+
+.propaganda {
+    text-align: center;
+    margin-top: 2px;
+    margin-block: 35%;
+    font-family: Verdana;
+}
+
+.propaganda h3 {
+    color: #FFFF00;
+    font-weight: 0;
+    font-size: 20;
+    
+}
