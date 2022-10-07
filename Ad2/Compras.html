@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ótica a Perder de Vista</title>
+        <link rel="stylesheet" href="style2.css">
+
+    </head>
+    <body>
+        <header>
+            <img class="imgLogo" src="APDVOtica_LogoTopo.png">
+            <address class="ender"> <i>Avenida Parcelada,123 <br>
+                Tel: (21) 91234-5678</i> <br>
+                <u>contato@apdv.com.br</u> </address>
+        </header>
+        <nav class="nav-menu">
+             
+            <button  class="nav-botao"><a   href = "APDVOtica.html"> INICIAL</a></button>
+             <button class="nav-botao"><a   href = "Lentes.html"> LENTES</a></button>
+             <button class="nav-botao"><a   href = "Armacoes.html"> ARMAÇÕES</a></button>
+             <button class="nav-botao"><a   href = "Compras.html"> COMPRAS</a></button>
+        </nav>
+        <h3>Compras</h3>
+
+        <section >
+        <form class="geral" >
+            <fieldset>
+                <legend>Identificação</legend>
+            
+            <div>
+                
+                
+            </div>
+                <div class="divLinha">
+                    <label class="fsEsq">Nome:</label>
+                    <input type="text" class="inpGrande" placeholder="digite seu nome">
+                </div>
+                <div class="divLinha">
+                    <label class="fsEsq">E-mail:</label>
+                    <input type="text" class="inpGrande" placeholder="digite seu e-mail">
+                </div>
+                <div class="divLinha">
+                    <label class="fsEsq">Endereço:</label>
+                    <textarea class="impEnder"></textarea>
+                </div>
+                
+                    <fieldset class="fsDir">
+                        <legend>Gênero</legend>
+                        <div>
+                            <input type="radio" id ="masc" name="sexo" value="masculino" checked>
+                            <label for="masc">Masc</label>
+                            <input type="radio" id ="fem" name="sexo" value="feminino">
+                            <label for="fem">Fem</label>
+                            <input type="radio" id ="outros" name="sexo" value="outros">
+                            <label for="outros">Outros</label>
+                        </div>
+                    </fieldset>
+                
+                <div class="divLinha">
+                    <label class="fsEsq">Telefone:</label>
+                    <input class="impTelef">
+                </div>
+                <div class="divLinha">
+                    <label class="fsEsq">Celular:</label>
+                    <input class="impTelef">
+                </div>
+                <div class="divLinha"></div>
+                <fieldset class="fsDir">
+                    <legend>Nascimento</legend>
+                    <Input class="numDD" type="number" size="02" min="01" max="31"></Input> / 
+                    <Input class="numDD" type="number" size="02" min="01" max="12"></Input> /
+                    <Input class="numQd" type="number" size="04" min="1900" max="9999"></Input>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Pagamento</legend>
+                    <fieldset class="fsEsq">
+                        <legend>Cartão</legend>
+                            <fieldset>
+                                <legend>Bandeira</legend>
+                                <div>
+                                    <input type="radio" id ="visa" name="cartao" value="visa" checked>
+                                    <label for="visa">Visa</label>
+                                    <input type="radio" id ="master" name="cartao" value="master">
+                                    <label for="master  ">Master</label>
+                                    <input type="radio" id ="elo" name="cartao" value="elo">
+                                    <label for="elo">Elo</label>
+                                </div>
+                            </fieldset>
+                            <div>
+                                <br>
+                                <label >Validade</label>
+                                <input class="numDD" type="number" size= 2 min="1" max="12"> / 
+                                <input class="numQd" type="number" size="4" min ="2000" max="9999">
+                            </div>
+                            <div>
+                                <br>
+                                <label>Numero</label>
+                                <input type="text" class="impNCC">
+                            </div>
+                            <div>
+                                <br>
+                                <label>Parcelas</label>
+                                <select class="botoes" name="numeroParcelas" id="numParcelas" text>
+                                    <option value="avista">à vista</option>
+                                    <option value="2x">2x</option>
+                                    <option value="3x">3x</option>
+                                    <option value="4x">4x</option>
+                                    <option value="5x">5x</option>
+                                    <option value="6x">6x</option>
+                                    <option value="7x">7x</option>
+                                    <option value="8x">8x</option>
+                                    <option value="9x">9x</option>
+                                    <option value="10x">10x</option>
+                                </select>
+                            </div>
+                            <br>
+                    </fieldset>
+                    <div>
+                    <textarea class="listaCompras"></textarea>
+                        <br>
+                    </div>
+                    <div>
+                        <label >Valor R$</label>
+                        <input type="number" class="nmQd">
+                    </div>
+
+                </fieldset>
+            <div class="botoes">
+                <button > Enviar</button> 
+                <button>Limpar</button>   
+            </div>
+            </form>
+            
+    </section>

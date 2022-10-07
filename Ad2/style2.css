@@ -1,0 +1,277 @@
+header{ 
+    display:block; 
+}
+nav { 
+    display:block; 
+    background-color: #6480FF;
+    color: #FFFF00;
+    font-size: 16px;
+    font-family: Verdana, Stroke, Tahoma, sans-serif;
+    margin: 2px;
+    border-bottom: 2px;
+    border-top: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Stroke, Tahoma, sans-serif;
+    border-style: solid;
+    border-color: #EEEE00;
+    border-left: none ;
+    border-right: none;
+
+
+}
+section { 
+    display:block; 
+}
+
+body {
+    background-color: #6480FF;
+    color: #FFFF00;
+    font-size: 16px;
+    font-family: Verdana, Stroke, Tahoma, sans-serif;
+}
+
+a {
+    color: #EEEE00;
+}
+
+a:visited{
+  color: #EEEE00;
+}
+
+.ender {
+    text-align: right;
+    font-size: 12px;
+    line-height: 140%;
+    float: right;
+}
+
+.imgLogo {
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+
+    }
+
+.apres {
+    text-align: center;
+    font-size: 18px;
+}
+
+nav a {
+    color: #0000DD;
+    text-decoration: none;
+}
+
+    
+
+nav  a:visited{
+    color: #0000DD;
+    
+}
+
+nav a:hover{
+    color: #DD00DD
+}
+
+.nav-menu{
+    margin: 3px auto;
+
+}
+
+.nav-botao {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-bottom: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px ;
+    padding-right: 4px;
+    background-color: #FFEE66;
+    width: 100px;
+    display: inline-block;
+}
+
+.listaLentes {
+    color: #3040BB;
+    background-color: #EEDD99;
+    padding: 10px 10px 10px 50px;
+    margin: 30px 10px 10px 10px;
+    border-style: solid;
+    border: 2px;
+    border-color: #000055;
+    line-height: 200%;
+    list-style-type: upper-roman;
+}
+
+.listaLentes-ul {
+    color: #3040BB;
+    line-height: 200%;
+}
+
+.listaLentes-img {
+    vertical-align: center;
+}
+
+.listaLentes-preco {
+    color: #EE0000
+}
+
+.listaLentes a{
+    color: #550099;
+}
+
+.tabOculos{
+    border-style: solid;
+    border-width: thin;
+    border-collapse: collapse;
+    background-color: #EEDD99;
+    color: #000066;
+    width: 96%;
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+.tabOculos-td , .tabOculos-th {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000055;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabOculos-titulo{
+    color: #FFFF22;
+    background-color: #447799;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabOculos-linth {
+    color: #FFFFFF;
+    background-color: #777777;
+    vertical-align: middle;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000055;
+}
+
+.tabOculos-colth {
+    color: #FFFFFF;
+    background-color: #999999;
+    text-align: left;
+}
+
+.tabOculos-imgCel {
+    background-color:#FFFFFF ;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000055;
+}
+
+.tabOculos-preco{
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+.geral {
+    width: 580px;
+    color: #880000;
+    background-color: #EEDD99;
+    padding: 6px 6px 15px 6px;
+    margin: 10px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000055;
+}
+
+.listaCompras {
+    height: 230px;
+    width: 230px;
+    float: right;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+    }
+
+.fsEsq {
+    float:left;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+
+.fsDir {
+    float:right;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+}
+
+.inpGrande{
+    width: 440px;
+}
+
+.inpMedio{
+    width: 80px;
+}
+
+.impNCC {
+    width: 130px;
+}
+
+.impTelef {
+    width: 90px;
+}
+
+.impEnder{
+    width: 200px;
+    height: 60px;
+}
+
+.numDD{
+    width: 30px;
+    
+}
+
+.numQd{
+    width: 50px;
+}
+
+.divLinha{
+    width: 550px;
+    margin-bottom: 6px;
+}
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras{
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag{
+    float: left;
+    display: block;
+    width: 250px;
+}
+
+.janInfoDetalhe{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 15px;
+}
