@@ -1,139 +1,64 @@
-function mostraItemBauch () {
-    id = document.getElementById("bauch_lonb")
-    Titulo = id.innerText;
-    const titulo_nome = document.createElement( "h2");
-    titulo_nome.innerText = Titulo
-    titulo_nome.style.textAlign = "center"
-    const imagem_oculos = document.createElement("img")
-    imagem_oculos.src ="/Imagens-AD2/BauchELomb_30D_200.jpg"
-    imagem_oculos.style.margin = "0 40%"
-    imagem_oculos.style.padding = "0 5%"
-    document.body.appendChild(titulo_nome);
-    document.body.appendChild(imagem_oculos);
-    const fabricante = document.createElement("h3")
-    fabricante.innerText = "Fabricante: Bauch & Lonb"
-    fabricante.style.textAlign = "center"
-    document.body.appendChild(fabricante)
-    const periodo = document.createElement("h3")
-    periodo.innerText = "Período: 30 dias"
-    periodo.style.textAlign = "center"
-    document.body.appendChild(periodo);
-    const preco = document.createElement("h3")
-    preco.innerHTML = "Preço R$ 100,00";
-    preco.style.textAlign = "center";
-    document.body.appendChild(preco)
-    var botaoFechar = document.createElement("button")
-    botaoFechar.setAttribute('type','button')
-    botaoFechar.appendChild(document.createTextNode('Fechar'))
-    botaoFechar.style.margin = "0 50%"
-    document.body.appendChild(botaoFechar);
-    
-}
-
-function mostraItemCoopervision () {
-    id = document.getElementById("coopervision")
-    Titulo = id.innerText;
-    const titulo_nome = document.createElement( "h2");
-    titulo_nome.innerText = Titulo
-    titulo_nome.style.textAlign = "center"
-    const imagem_oculos = document.createElement("img")
-    imagem_oculos.src ="/Imagens-AD2/Bioinfinity_30D_200.jpg"
-    imagem_oculos.style.margin = "0 40%"
-    imagem_oculos.style.padding = "0 5%"
-    document.body.appendChild(titulo_nome);
-    document.body.appendChild(imagem_oculos);
-    const fabricante = document.createElement("h3")
-    fabricante.innerText = "Fabricante: Coopervision"
-    fabricante.style.textAlign = "center"
-    document.body.appendChild(fabricante)
-    const periodo = document.createElement("h3")
-    periodo.innerText = "Período: 30 dias"
-    periodo.style.textAlign = "center"
-    document.body.appendChild(periodo);
-    const preco = document.createElement("h3")
-    preco.innerHTML = "Preço R$ 180,00";
-    preco.style.textAlign = "center";
-    document.body.appendChild(preco)
-    var botaoFechar = document.createElement("button")
-    botaoFechar.style.marginLeft = "50%"
-    botaoFechar.setAttribute('type','button')
-    botaoFechar.appendChild(document.createTextNode('Fechar'))
-    document.body.appendChild(botaoFechar);
-    
-}
-
-function mostraItemAcuvueOasys () {
-    id = document.getElementById("acuvue_oasys")
-    Titulo = id.innerText;
-    const titulo_nome = document.createElement( "h2");
-    titulo_nome.innerText = Titulo
-    titulo_nome.style.textAlign = "center"
-    const imagem_oculos = document.createElement("img")
-    imagem_oculos.src ="/Imagens-AD2/Acuvue_15D_200.jpg"
-    imagem_oculos.style.margin = "0 40%"
-    imagem_oculos.style.padding = "0 5%"
-    document.body.appendChild(titulo_nome);
-    document.body.appendChild(imagem_oculos);
-    const fabricante = document.createElement("h3")
-    fabricante.innerText = "Fabricante: Johnson & Johnson"
-    fabricante.style.textAlign = "center"
-    document.body.appendChild(fabricante)
-    const periodo = document.createElement("h3")
-    periodo.innerText = "Período: 15 dias"
-    periodo.style.textAlign = "center"
-    document.body.appendChild(periodo);
-    const preco = document.createElement("h3")
-    preco.innerHTML = "Preço R$ 220,00";
-    preco.style.textAlign = "center";
-    document.body.appendChild(preco)
-    var botaoFechar = document.createElement("button")
-    botaoFechar.style.marginLeft = "50%"
-    botaoFechar.setAttribute('type','button')
-    botaoFechar.appendChild(document.createTextNode('Fechar'))
-    document.body.appendChild(botaoFechar);
-    
-}
-
-function mostraItemAcuvue2 () {
-    id = document.getElementById("acuvue")
-    Titulo = id.innerText;
-    const titulo_nome = document.createElement( "h2");
-    titulo_nome.innerText = Titulo
-    titulo_nome.style.textAlign = "center"
-    const imagem_oculos = document.createElement("img")
-    imagem_oculos.src ="/Imagens-AD2/Acuvue2_15D_200.jpg"
-    imagem_oculos.style.margin = "0 40%"
-    imagem_oculos.style.padding = "0 5%"
-    document.body.appendChild(titulo_nome);
-    document.body.appendChild(imagem_oculos);
-    const fabricante = document.createElement("h3")
-    fabricante.innerText = "Fabricante: Johnson & Johnson"
-    fabricante.style.textAlign = "center"
-    document.body.appendChild(fabricante)
-    const periodo = document.createElement("h3")
-    periodo.innerText = "Período: 15 dias"
-    periodo.style.textAlign = "center"
-    document.body.appendChild(periodo);
-    const preco = document.createElement("h3")
-    preco.innerHTML = "Preço R$ 170,00";
-    preco.style.textAlign = "center";
-    document.body.appendChild(preco)
-    var botaoFechar = document.createElement("button")
-    botaoFechar.style.marginLeft = "50%"
-    botaoFechar.setAttribute('type','button')
-    botaoFechar.appendChild(document.createTextNode('Fechar'))
-    document.body.appendChild(botaoFechar);
-    
-}
-
-function associaProduto() {
-    produtos = [{
+  const  produtos = [{
         modelo: "Oakley Winfold",
-        imagem:"",
+        imagem:"M_Oakley_100.jpg",
         genero:"Masculino",
         preco: "R$ 855,00",
+    },
+    {
+        modelo: "Persol",
+        imagem:"M_Persol_100.jpg",
+        genero:"Masculino",
+        preco: "R$ 1377,00",
+    },
+    {
+        modelo: "Ray-ban Round",
+        imagem:"M_Ray-ban_100.jpg",
+        genero:"Masculino",
+        preco: "R$ 666,00",
+    },
+    {
+        modelo: "Kipling",
+        imagem:"F_Kipling_100.jpg",
+        genero:"Feminino",
+        preco: "R$ 423,00",
+    },
+    {
+        modelo: "Michael Kors",
+        imagem:"F_MichaelKors_100.jpg",
+        genero:"Feminino",
+        preco: "R$ 684,00",  
     }]
-        
-    
 
+function associaProduto() {
+      nomeOculos = document.querySelectorAll(".tabOculos-td")
+        nomeOculos.forEach((element) => {
+            element.addEventListener('click', (event) => {
+             const modelo =   element.innerText
+               if(produtos[0].modelo === modelo){
+                setaProduto(0)
+                }
+                if(produtos[1].modelo === modelo){
+                    setaProduto(1)
+                }
+                if(produtos[2].modelo === modelo){
+                    setaProduto(2)
+                }
+                if(produtos[3].modelo === modelo){
+                    setaProduto(3)
+                }
+                if(produtos[4].modelo === modelo){
+                    setaProduto(4)
+                }
+
+
+            })
+            
+        });
+};
+
+function setaProduto(indiceProduto){
+    document.getElementById('titDes').innerHTML = produtos[indiceProduto].modelo
+    document.getElementById('imgDes').setAttribute('src',produtos[indiceProduto].imagem)
+    document.querySelectorAll('#prcDes')[0].innerHTML = produtos[indiceProduto].genero
+    document.querySelectorAll('#prcDes')[1].innerHTML = produtos[indiceProduto].preco
 }
