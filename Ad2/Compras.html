@@ -124,17 +124,17 @@
                             <div>
                                 <br>
                                 <label>Parcelas</label>
-                                <select class="botoes" name="numeroParcelas" id="numParcelas" text>
-                                    <option value="avista">à vista</option>
-                                    <option value="2x">2x</option>
-                                    <option value="3x">3x</option>
-                                    <option value="4x">4x</option>
-                                    <option value="5x">5x</option>
-                                    <option value="6x">6x</option>
-                                    <option value="7x">7x</option>
-                                    <option value="8x">8x</option>
-                                    <option value="9x">9x</option>
-                                    <option value="10x">10x</option>
+                                <select onchange="setaPrecoParcela()" class="botoes" name="numeroParcelas" id="numParcelas" text>
+                                    <option value="1">à vista</option>
+                                    <option value="2">2x</option>
+                                    <option value="3">3x</option>
+                                    <option value="4">4x</option>
+                                    <option value="5">5x</option>
+                                    <option value="6">6x</option>
+                                    <option value="7">7x</option>
+                                    <option value="8">8x</option>
+                                    <option value="9">9x</option>
+                                    <option value="10">10x</option>
                                 </select>
                             </div>
                             <br>
@@ -143,10 +143,9 @@
                     <textarea class="listaCompras"></textarea>
                         <br>
                     </div>
-                    <div>
-                        <p></p>
-                        <p></p>
-                    </div>
+                       <p>Valor Total R$ <span id="precoTotal"></span></p>
+                        <p>Em <span id="compraParcelas"></span> X de <span id = "precoParcelado"></span></p>
+                    
 
                 </fieldset>
             <div class="botoes">

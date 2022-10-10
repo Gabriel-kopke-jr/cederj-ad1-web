@@ -64,8 +64,76 @@ function setaProduto(indiceProduto){
 }
 
 function addProduct(){
-   lista = document.getElementById("selProduto").
-   selecao = lista.options[select.selectedIndex].value
-   console.log(selecao)
-   
+
+
+   const indexProduto = document.getElementById("selProduto").selectedIndex 
+    addNaLista(indexProduto)
+    if(indexProduto == 0){
+        alert("Nenhum produto Selecionado")
+    }else {
+    const precoTotal = document.getElementById("precoTotal")
+    precoTotal.innerText  = alteraPreço(indexProduto)
+    setaPrecoParcela(parseFloat(precoTotal.innerText))
+  }}
+
+function addNaLista(indiceProduto){
+    const selecao = document.getElementById("selProduto")
+    const listaDeCompras = document.querySelector('.listaCompras');
+    listaDeCompras.innerHTML += selecao[indiceProduto].innerText + '\n'
 }
+
+function alteraPreço(indiceProduto){
+    const precoTotal = document.getElementById("precoTotal")
+    valorAtual = precoTotal.innerText
+    console.log(valorAtual)
+    if(valorAtual == "" ){
+    valorAtual = 0};
+    valorAtual = parseFloat(valorAtual)
+    var valorAcrescido;
+    switch (indiceProduto){
+        case 1:
+            valorAcrescido = 100.00;
+            break
+        case 2:
+            valorAcrescido = 180.00
+            break
+        case 3:
+            valorAcrescido = 220.00
+            break
+        case 4: 
+            valorAcrescido = 170.00
+            break
+        case 5:
+            valorAcrescido = 855.00
+            break
+        case 6:
+            valorAcrescido = 1377.00
+            break
+        case 7:
+            valorAcrescido = 666.00
+            break
+        case 8:
+            valorAcrescido = 423.00
+            break
+        case 9:
+            valorAcrescido = 684.00
+            break
+        
+        } 
+    valorAtual += valorAcrescido;
+    return valorAtual   
+}
+
+function setaPrecoParcela (precoTotal){
+    parcelas = setnumParcela()
+    var valorParcela = document.getElementById('precoParcelado')
+    valorParcela.innerText = Math.ceil(precoTotal/parcelas)
+
+}
+function setnumParcela (){
+    const parcelas = document.getElementById('numParcelas').value
+    var parcelamento = document.getElementById('compraParcelas')
+    parcelamento.innerText = parseInt(parcelas)
+    return parcelas
+}
+
