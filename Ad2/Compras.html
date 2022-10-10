@@ -49,7 +49,7 @@
                         <div>
                             <input type="radio" id ="masc" name="sexo" value="masculino" checked>
                             <label for="masc">Masc</label>
-                            <input type="radio" id ="fem" name="sexo" value="feminino">
+                            <input type="radio" id ="fem" name="sexo" value="feminino">Masc
                             <label for="fem">Fem</label>
                             <input type="radio" id ="outros" name="sexo" value="outros">
                             <label for="outros">Outros</label>
@@ -73,7 +73,30 @@
                 </fieldset>
             </fieldset>
             <fieldset>
+            <div id="lisSelProd">
                 <legend>Pagamento</legend>
+                <label for="Produtos">Produtos:</label>
+                <select id="selProduto"  class="product-box" name="Produtos" >
+                    <option>-----</option>
+                <optgroup label="Lentes">
+                    <option value="Bauch & Lonb Softlens">Bauch & Lonb Softlens</option>
+                    <option value="Coopervision Bioinfinity">Coopervision Bioinfinity</option>
+                    <option value="Johnson Acuvue Oasys">Johnson Acuvue Oasys</option>
+                    <option value="Johnson Acuvue 2">Johnson Acuvue 2</option>
+                </optgroup>
+                <optgroup label="Armações masculinas">
+                    <option>Oakley Wingfold</option>
+                    <option>Persol</option>
+                    <option>Ray Ban Round</option>
+                </optgroup>
+                <optgroup label="Armações Femininas">
+                    <option>Kipling</option>
+                    <option>Michael Kors</option>
+                </optgroup>
+                   
+            </select>
+        </div>
+            <button type="button" onclick="addProduct()">Incluir</button>
                     <fieldset class="fsEsq">
                         <legend>Cartão</legend>
                             <fieldset>
@@ -121,8 +144,8 @@
                         <br>
                     </div>
                     <div>
-                        <label >Valor R$</label>
-                        <input type="number" class="nmQd">
+                        <p></p>
+                        <p></p>
                     </div>
 
                 </fieldset>
@@ -133,3 +156,4 @@
             </form>
             
     </section>
+    <script src="main.js"></script>

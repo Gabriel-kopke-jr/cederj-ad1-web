@@ -305,3 +305,12 @@ nav a:hover{
 .img-card-page{
     text-align: center;
 }
+.product-box{
+    width: 390px;
+}
+#lisSelProd{
+    width: 500px;
+}
+#selProduto{
+    width: 70%;
+}

@@ -62,3 +62,10 @@ function setaProduto(indiceProduto){
     document.querySelectorAll('#prcDes')[0].innerHTML = produtos[indiceProduto].genero
     document.querySelectorAll('#prcDes')[1].innerHTML = produtos[indiceProduto].preco
 }
+
+function addProduct(){
+   lista = document.getElementById("selProduto").
+   selecao = lista.options[select.selectedIndex].value
+   console.log(selecao)
+   
+}
